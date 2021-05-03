@@ -1,0 +1,12 @@
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\bin\Debug\net5.0\PoorTwittsProject.Domain.deps.json
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\bin\Debug\net5.0\PoorTwittsProject.Domain.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\bin\Debug\net5.0\ref\PoorTwittsProject.Domain.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\bin\Debug\net5.0\PoorTwittsProject.Domain.pdb
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.csprojAssemblyReference.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.AssemblyInfoInputs.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.AssemblyInfo.cs
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\ref\PoorTwittsProject.Domain.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Domain\obj\Debug\net5.0\PoorTwittsProject.Domain.pdb

@@ -1,0 +1,15 @@
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\PoorTwittsProject.Database.deps.json
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\PoorTwittsProject.Database.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\ref\PoorTwittsProject.Database.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\PoorTwittsProject.Database.pdb
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\PoorTwittsProject.Domain.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\bin\Debug\net5.0\PoorTwittsProject.Domain.pdb
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.csprojAssemblyReference.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.AssemblyInfoInputs.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.AssemblyInfo.cs
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.csproj.CoreCompileInputs.cache
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.csproj.CopyComplete
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\ref\PoorTwittsProject.Database.dll
+C:\Users\amede\Desktop\GitHubRepos\PoorTwitts\PoorTwittsProject\PoorTwittsProject.Database\obj\Debug\net5.0\PoorTwittsProject.Database.pdb
