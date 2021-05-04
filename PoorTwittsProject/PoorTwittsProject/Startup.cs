@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PoorTwittsProject.Database;
+using PoorTwittsProject.Database.Repositories;
+using PoorTwittsProject.Domain.Entities;
+using PoorTwittsProject.Domain.Interfaces;
+using PoorTwittsProject.Hubs;
 using System;
 
 namespace PoorTwittsProject
@@ -25,7 +29,12 @@ namespace PoorTwittsProject
         {
             services.AddDbContext<ApplicationDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Default")));
 
+            services.AddIdentity<ApplicationUser, IdentityRole>(config =>
+            {
+                config.SignIn.RequireConfirmedEmail = true;
+            }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
+            services.AddTransient<ITwittRepository, TwittRepository>();
             services.AddSignalR();
 
             services.AddControllersWithViews();
@@ -59,13 +68,16 @@ namespace PoorTwittsProject
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
 
-              //  endpoints.MapHub<MessageHubClient>("/twitt");
+                endpoints.MapHub<TwittHubClient>("/twitt");
             });
 
             app.UseSpa(spa =>

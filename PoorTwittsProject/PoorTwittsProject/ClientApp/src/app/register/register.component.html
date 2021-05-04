@@ -1,1 +1,11 @@
-<p>register works!</p>
+<p>Username:</p>
+<input [(ngModel)]="userRegisterDto.userName" />
+<p>FirstName:</p>
+<input [(ngModel)]="userRegisterDto.firstName" />
+<p>LastName:</p>
+<input [(ngModel)]="userRegisterDto.lastName" />
+<p>Email:</p>
+<input [(ngModel)]="userRegisterDto.email" />
+<p>Password:</p>
+<input type="password" [(ngModel)]="userRegisterDto.password" />
+<button (click)="sendRegisterRequest()">Submit</button>

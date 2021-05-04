@@ -1,1 +1,13 @@
-<p>wall works!</p>
+<p>Username: {{ userName }}</p>
+<p>Response from backend: {{ backendResponse }}</p>
+
+<div>
+  <p>Twitts:</p>
+  <div *ngFor="let twittInArray of twitts">
+    <p>{{twittInArray.author}}: {{twittInArray.content}}</p>
+  </div>
+</div>
+
+<input [(ngModel)]="twitt" />
+<button (click)="sendTwittRequest()">Click me to publish twitt</button>
+

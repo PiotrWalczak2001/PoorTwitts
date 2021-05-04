@@ -1,1 +1,5 @@
-<p>login works!</p>
+<p>Username:</p>
+<input [(ngModel)]="userLoginDto.userName" />
+<p>Passowrd:</p>
+<input type="password" [(ngModel)]="userLoginDto.password" />
+<button (click)="sendLoginRequest()">Submit</button>
