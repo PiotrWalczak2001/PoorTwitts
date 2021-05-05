@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using PoorTwittsProject.Domain.Dtos;
 using PoorTwittsProject.Domain.Entities;
 using PoorTwittsProject.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
+using PoorTwittsProject.Hubs;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PoorTwittsProject.Controllers
 {
@@ -14,9 +13,11 @@ namespace PoorTwittsProject.Controllers
     public class TwittsController : ControllerBase
     {
         private readonly ITwittRepository _twittRepository;
-        public TwittsController(ITwittRepository twittRepository)
+        private readonly IHubContext<TwittHubClient, ITwittHubClient> _twittHub;
+        public TwittsController(ITwittRepository twittRepository, IHubContext<TwittHubClient, ITwittHubClient> twittHub)
         {
             _twittRepository = twittRepository;
+            _twittHub = twittHub;
         }
 
         [HttpGet]
@@ -49,7 +50,8 @@ namespace PoorTwittsProject.Controllers
             var result = _twittRepository.AddTwitt(twittEntity);
             if(result)
             {
-               return Ok(twittDto); 
+                _twittHub.Clients.All.NewTwitt().Wait();
+                return Ok(twittDto); 
             }
             return NotFound();
         }

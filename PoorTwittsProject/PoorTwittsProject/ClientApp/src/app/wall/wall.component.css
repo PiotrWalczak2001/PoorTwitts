@@ -1,0 +1,9 @@
+.twitt{
+    height: 100px;
+    width:500px;
+    background-color:tomato;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+    border: 2px solid black;
+}

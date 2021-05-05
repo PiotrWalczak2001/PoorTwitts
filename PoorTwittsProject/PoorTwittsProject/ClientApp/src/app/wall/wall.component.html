@@ -1,10 +1,12 @@
 <p>Username: {{ userName }}</p>
-<p>Response from backend: {{ backendResponse }}</p>
 
 <div>
   <p>Twitts:</p>
   <div *ngFor="let twittInArray of twitts">
-    <p>{{twittInArray.author}}: {{twittInArray.content}}</p>
+    <div class="twitt">
+      <p>{{twittInArray.author}}: {{twittInArray.content}}</p>
+    </div>
+    
   </div>
 </div>
 

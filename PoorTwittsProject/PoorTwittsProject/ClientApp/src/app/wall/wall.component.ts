@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import * as signalR from '@aspnet/signalr';
 
 export class Twitt {
   content: string;
@@ -24,13 +24,26 @@ export class WallComponent implements OnInit {
   ngOnInit() {
     this.http.get("https://localhost:44369/" + "account" + "/getUser").subscribe(response => {
       this.userName = (response as any).userName;
+
+      this.refreshTwitts();
+
+      var connection = new signalR.HubConnectionBuilder()
+        .configureLogging(signalR.LogLevel.Information)
+        .withUrl("https://localhost:44369/twitt")
+        .build()
+
+      connection.start();
+
+      connection.on("NewTwitt", () => {
+        this.refreshTwitts()
+      })
     },
       error => {
       });
 
   }
 
-  refreshMessages() {
+  refreshTwitts() {
     this.http.get<Array<Twitt>>("https://localhost:44369/" + "twitts" + "/getTwitts").subscribe(response => {
       this.twitts = response;
     },
